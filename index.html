@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+</head>
+<style>
+    * {
+        list-style: none;
+    }
+</style>
+<body>
+    <div class="container">
+        <h2>Formulário de Inscrição para Evento Tech 2024</h2>
+        <form action="#" method="post">
+            <!-- Informações Pessoais -->
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <ul>
+                    <li><label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </li>
+                    <li><label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </li>
+                    <li> <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </li>
+                    <li>
+                        <label for="idade">Idade:</label>
+                        <input type="number" id="idade" name="idade" required>
+                    </li>
+                    <li>
+                        <label for="data_nascimento">Data de Nascimento:</label>
+                        <input type="date" id="data_nascimento" name="data_nascimento" required>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <!-- Preferências do Evento -->
+            <fieldset>
+                <legend>Preferências do Evento</legend>
+                <ul>
+                    <li><label for="temas">Temas de Interesse:</label>
+                        <select Name="Name_of_list_box" Size="Number_of_options">
+                            <option>Front-end</option>
+                            <option>Back-end</option>
+                            <option>Outros</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label>Workshops:</label><br>
+                        <input type="checkbox" id="workshop1" name="workshop1">
+                        <label for="workshop1">Desenvolvimento Web Moderno</label><br>
+                        <input type="checkbox" id="workshop2" name="workshop2">
+                        <label for="workshop2">Introdução a Inteligência Artificial</label><br>
+                        <input type="checkbox" id="workshop3" name="workshop3">
+                        <label for="workshop3">Segurança na Internet</label><br>
+                    </li>
+                </ul>
+
+
+            </fieldset>
+
+
+
+
+            <!-- Submissão de Apresentação -->
+            <fieldset>
+                <legend>Submissão de Apresentação</legend>
+
+                <ul>
+                    <li>
+                        <label for="titulo">Título da Apresentação:</label>
+                        <input type="text" id="titulo" name="titulo">
+                    </li>
+                    <li>
+                        <label for="resumo">Resumo:</label>
+                        <textarea id="resumo" name="resumo"></textarea>
+                    </li>
+                    <li>
+                        <label for="anexo">Anexar Apresentação(PDF):</label>
+                        <input type="file" id="anexo" name="anexo">
+                    </li>
+                    <li>
+                        <!-- Botão de Envio -->
+                        <input type="submit" value="Enviar">
+                    </li>
+
+                </ul>
+            </fieldset>
+        </form>
+        <footer>
+            <CENTER>
+            <p>&copy; 2024 Inscrição para Evento Tech. Todos os direitos reservados.</p>
+        </CENTER>
+        </footer>
+    </div>
+</body>
+
+</html>
